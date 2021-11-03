@@ -28,9 +28,9 @@
                         <td class="text-center"><?php echo $employee->correo; ?></td>
                         <td class="text-center">
                             <div class="btn-group " role="group" aria-label="">
-                                <a href="?controller=employees&action=edit&id=<?php echo $employee->id; ?>" type="button" class="btn btn-success"><i class="bi bi-pencil-square"></i> Editar</a> 
-                                <a type="button" href="?controller=employees&action=details&id=<?php echo $employee->id; ?>" class="btn btn-primary"> <i class="bi bi-file-person"></i> Detalles </a>                
-                                <a href="?controller=employees&action=delete&id=<?php echo $employee->id; ?>" type="button" class="btn btn-danger" onclick="return confirmDelete()"><i class="bi bi-person-dash"></i> Eliminar</a>
+                                <a href="?controller=employees&action=edit&id=<?php echo $employee->id; ?>" type="button" class="btn btn-outline-success"><i class="bi bi-pencil-square"></i> Editar</a> 
+                                <a type="button" href="?controller=employees&action=details&id=<?php echo $employee->id; ?>" class="btn btn-outline-primary"> <i class="bi bi-file-person"></i> Detalles </a>                
+                                <a href="?controller=employees&action=delete&id=<?php echo $employee->id; ?>" type="button" class="btn btn-outline-danger" onclick="return confirmDelete()"><i class="bi bi-person-dash"></i> Eliminar</a>
                             </div>
                         </td>
                     </tr>

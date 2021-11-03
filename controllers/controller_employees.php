@@ -19,15 +19,19 @@
         public function create(){
 
             // Valido que exista envío de datos y que no estén vacios
-            $post = (isset($_POST['nombre']) && !empty($_POST['nombre'])) &&
+                $post = (isset($_POST['dni']) && !empty($_POST['dni'])) &&
+                    (isset($_POST['nombre']) && !empty($_POST['nombre'])) &&
                     (isset($_POST['apellido']) && !empty($_POST['apellido'])) &&
+                    (isset($_POST['edad']) && !empty($_POST['edad'])) &&
                     (isset($_POST['correo']) && !empty($_POST['correo']));
 
             if($post){
+                $dni = $_POST['dni'];
                 $nombre = $_POST['nombre'];
                 $apellido = $_POST['apellido'];
+                $edad = $_POST['edad'];
                 $correo = $_POST['correo'];
-                Employee::create($nombre, $apellido, $correo);
+                Employee::create( $dni, $nombre, $apellido, $edad, $correo);
                 header('Location:./?controller=employees&action=inicio');
             }
             
@@ -38,16 +42,20 @@
         public function edit(){
 
             // Valido que exista envío de datos y que no estén vacios
-            $post = (isset($_POST['nombre']) && !empty($_POST['nombre'])) &&
+            $post = (isset($_POST['dni']) && !empty($_POST['dni'])) &&
+                    (isset($_POST['nombre']) && !empty($_POST['nombre'])) &&
                     (isset($_POST['apellido']) && !empty($_POST['apellido'])) &&
+                    (isset($_POST['edad']) && !empty($_POST['edad'])) &&
                     (isset($_POST['correo']) && !empty($_POST['correo']));
 
             if($post){
                 $id = $_POST['id'];
+                $dni = $_POST['dni'];
                 $nombre = $_POST['nombre'];
                 $apellido = $_POST['apellido'];
+                $edad = $_POST['edad'];
                 $correo = $_POST['correo'];
-                Employee::edit($id, $nombre, $apellido, $correo);
+                Employee::edit($id, $dni, $nombre, $apellido, $edad, $correo);
                 header('Location:./?controller=employees&action=inicio');
             }
 

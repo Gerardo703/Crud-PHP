@@ -4,25 +4,50 @@
     </div>
     <div class="card-body">
         <form action="" method="POST">
-            <div class="mb-3">
-              <label for="id" class="form-label">Id:</label>
-              <input type="text" readonly
-                class="form-control" value="<?php echo $employee->id; ?>" required name="id" id="id" aria-describedby="helpId" placeholder="Id Empleado">
+            <div class="mb-3 row">
+
+              <div class="col-6">
+                <label for="id" class="form-label">Id:</label>
+                <input type="text" readonly
+                  class="form-control" value="<?php echo $employee->id; ?>" required name="id" id="id" aria-describedby="helpId" placeholder="Id Empleado">
+              </div>
+
+              <div class="col-6">
+                <label for="edad" class="form-label">Edad:</label>
+                <input type="number"
+                  class="form-control" value="<?php echo $employee->edad; ?>" required name="edad" id="edad" aria-describedby="helpId" placeholder="Edad Empleado">
+              </div>
+
             </div>
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre:</label>
-              <input type="text"
-                class="form-control" value="<?php echo $employee->nombre; ?>" required name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre Empleado">
+            <div class="mb-3 row">
+              
+              <div class="col-6">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text"
+                  class="form-control" value="<?php echo $employee->apellido; ?>" required name="apellido" id="apellido" aria-describedby="helpId" placeholder="Apellido Empleado">
+              </div>
+
+              <div class="col-6">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text"
+                  class="form-control" value="<?php echo $employee->nombre; ?>" required name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre Empleado">
+              </div>
+
             </div>
-            <div class="mb-3">
-              <label for="apellido" class="form-label">Apellido:</label>
-              <input type="text"
-                class="form-control" value="<?php echo $employee->apellido; ?>" required name="apellido" id="apellido" aria-describedby="helpId" placeholder="Apellido Empleado">
-            </div>
-            <div class="mb-3">
-              <label for="correo" class="form-label">Correo:</label>
-              <input type="email"
-                class="form-control" value="<?php echo $employee->correo; ?>" required name="correo" id="correo" aria-describedby="helpId" placeholder="Correo Empleado">
+            <div class="mb-3 row">
+
+              <div class="col-6">
+                <label for="dni"  class="form-label">DNI:</label>
+                <input type="number" readonly
+                  class="form-control" value="<?php echo $employee->dni; ?>" required name="dni" id="dni" aria-describedby="helpId" placeholder="DNI Empleado">
+              </div>
+
+              <div class="col-6">
+                <label for="correo" class="form-label">Correo:</label>
+                <input type="email"
+                  class="form-control" value="<?php echo $employee->correo; ?>" required name="correo" id="correo" aria-describedby="helpId" placeholder="Correo Empleado">
+              </div>
+
             </div>
 
             <!-- <input type="submit" class="btn btn-primary" value="Editar"> -->

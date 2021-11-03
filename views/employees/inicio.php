@@ -8,8 +8,10 @@
         <thead class="thead-inverse|thead-default">
             <tr>
                 <th class="text-center">Id</th>
-                <th class="text-center">Nombre</th>
-                <th class="text-center">Apellido</th>
+                <th class="text-center">DNI</th>
+                <th class="text-center">Nombres</th>
+                <th class="text-center">Apellidos</th>
+                <th class="text-center">Edad</th>
                 <th class="text-center">Correo</th>
                 <th class="text-center">Acciones</th>
             </tr>
@@ -19,8 +21,10 @@
                 foreach( $employees as $employee){ ?>
                     <tr>
                         <td class="text-center" scope="row"><?php echo $employee->id; ?></td>
+                        <td class="text-center"><?php echo $employee->dni; ?></td>
                         <td class="text-center"><?php echo $employee->nombre; ?></td>
                         <td class="text-center"><?php echo $employee->apellido; ?></td>
+                        <td class="text-center"><?php echo $employee->edad; ?></td>
                         <td class="text-center"><?php echo $employee->correo; ?></td>
                         <td class="text-center">
                             <div class="btn-group " role="group" aria-label="">

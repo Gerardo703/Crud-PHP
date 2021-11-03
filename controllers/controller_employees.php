@@ -37,7 +37,12 @@
         // Edita un empleado
         public function edit(){
 
-            if($_POST){
+            // Valido que exista envío de datos y que no estén vacios
+            $post = (isset($_POST['nombre']) && !empty($_POST['nombre'])) &&
+                    (isset($_POST['apellido']) && !empty($_POST['apellido'])) &&
+                    (isset($_POST['correo']) && !empty($_POST['correo']));
+
+            if($post){
                 $id = $_POST['id'];
                 $nombre = $_POST['nombre'];
                 $apellido = $_POST['apellido'];

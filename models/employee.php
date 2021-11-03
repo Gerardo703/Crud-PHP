@@ -27,7 +27,7 @@
             }
 
             return $listEmployees;
-            print_r($listEmployees);
+            // print_r($listEmployees);
         }
 
         public static function create($nombre, $apellido, $correo){

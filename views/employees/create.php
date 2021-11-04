@@ -26,7 +26,6 @@
                 <input type="number"
                   class="form-control"name="dni" id="dni" aria-describedby="helpId" placeholder="DNI"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  type = "number"
                   maxlength = "8"
                   >
               </div>

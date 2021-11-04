@@ -22,13 +22,13 @@
             <div class="mb-3 row">
               
               <div class="col-6">
-                <label for="apellido" class="form-label">Apellido:</label>
+                <label for="apellido" class="form-label">Apellidos:</label>
                 <input type="text"
                   class="form-control" value="<?php echo $employee->apellido; ?>" required name="apellido" id="apellido" aria-describedby="helpId" placeholder="Apellido Empleado">
               </div>
 
               <div class="col-6">
-                <label for="nombre" class="form-label">Nombre:</label>
+                <label for="nombre" class="form-label">Nombres:</label>
                 <input type="text"
                   class="form-control" value="<?php echo $employee->nombre; ?>" required name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre Empleado">
               </div>

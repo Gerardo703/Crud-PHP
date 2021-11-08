@@ -19,11 +19,11 @@
         public function create(){
 
             // Valido que exista envío de datos y que no estén vacios
-                $post = (isset($_POST['dni']) && !empty($_POST['dni'])) &&
-                    (isset($_POST['nombre']) && !empty($_POST['nombre'])) &&
-                    (isset($_POST['apellido']) && !empty($_POST['apellido'])) &&
-                    (isset($_POST['edad']) && !empty($_POST['edad'])) &&
-                    (isset($_POST['correo']) && !empty($_POST['correo']));
+            $post = (isset($_POST['dni']) && !empty($_POST['dni'])) &&
+                (isset($_POST['nombre']) && !empty($_POST['nombre'])) &&
+                (isset($_POST['apellido']) && !empty($_POST['apellido'])) &&
+                (isset($_POST['edad']) && !empty($_POST['edad'])) &&
+                (isset($_POST['correo']) && !empty($_POST['correo']));
 
             if($post){
                 $dni = $_POST['dni'];

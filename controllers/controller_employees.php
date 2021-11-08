@@ -2,13 +2,13 @@
     // Agregamos el modelo
     include_once('./models/employee.php');
 
-    // Agregamos la conexió a la base de datos
+    // Agregamos la conexión a la base de datos
     include_once("./config/connectionDB.php");
     BD::createInstance();
 
     class ControllerEmployees{
 
-        // Muestra la pagina con los datos de los empleados
+        // Muestra la página con los datos de los empleados
         public function inicio(){
 
             $employees = Employee::getEmployees();

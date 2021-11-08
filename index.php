@@ -1,7 +1,7 @@
 <?php
 
     $controller = "pages";
-    $action = "error";
+    $action = "inicio";
 
     if(isset($_GET['controller']) && isset($_GET['action'])){
 
